@@ -58,6 +58,11 @@ public class bioskip08 {
         for (String i : penonton[2]) {
             System.out.println(i);
         }
-        
+        System.out.println();
+
+        //menampilkan nama penonton untuk setiap baris
+        for (int i = 0; i < penonton.length; i++) {
+            System.out.println("penonton pada baris ke-" + (i+1) + " : " + String.join(",", penonton[i]));
+        }
     }
 }
