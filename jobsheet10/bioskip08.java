@@ -51,7 +51,13 @@ public class bioskip08 {
         for (int i = 0; i < penonton[2].length; i++) {
             System.out.println(penonton[2][i]);
         }
+        System.out.println();
 
+        // Mmenampilkan dengan foreach
+        System.out.println("Manmpilkan banyak orang baris 3 foreach :");
+        for (String i : penonton[2]) {
+            System.out.println(i);
+        }
         
     }
 }
