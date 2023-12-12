@@ -12,23 +12,38 @@ public class triangle08 {
         while (i <= N) {
             int j = 0;
             while (j < i) {
-                System.out.print("*");
+                System.out.print(j);
                 j++;
             }
             System.out.println();
             i++;
         }
 
-        // int x = 0;
-        // while (x <= N) {
-        //     int j = 10;
-        //     while (j > x) {
-        //         System.out.print("*");
-        //         j--;
-        //     }
-        //     System.out.println();
-        //     x++;
-        // }
+        System.out.println();
+
+        int x = 0;
+        while (x < N) {
+            int j = N;
+            while (j > x) {
+                System.out.print("*");
+                j--;
+            }
+            System.out.println();
+            x++;
+        }
+
+        // perulangan untuk cetak segitiga angka
+        for (int y = 0; y <= N; y++) {
+            for(int z = N; z > y; z--) {
+                System.out.print(" ");
+            }
+            for(int a = 1; a <= y; a++) {
+                System.out.print(a);
+            }
+            System.out.println();
+        }
+
+        
 
     }
 }
